@@ -1,0 +1,37 @@
+div.a{
+    padding: 30px 50px 30px 50px;
+    background-color: lightgrey;
+}
+p {
+    font-family: verdana;
+    font-size: 12px;
+    color: #383838;
+    border: 1px solid pink;
+    padding: 30px 50px 30px 50px;
+    background-color: white;
+}
+header {
+    text-align: center;
+}
+
+h1.name{
+  color: dimgrey;
+  font-size: 40px;
+  font-family: verdana;
+
+}
+h2.contact {
+  color: dimgrey;
+  font-size: 20px;
+  font-family: verdana;
+
+}
+
+body {
+    background-color: lightgrey;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
