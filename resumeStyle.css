@@ -1,6 +1,11 @@
+div.b{
+  align-items: left;
+  padding: 30px 50px 30px 50px;
+  background-color: lightgrey;
+}
 div.a{
     padding: 30px 50px 30px 50px;
-    background-color: lightgrey;
+    background-image: url("marble.jpg");
 }
 p {
     font-family: verdana;
