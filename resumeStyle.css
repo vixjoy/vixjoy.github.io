@@ -6,6 +6,7 @@ div.b{
 div.a{
     padding: 30px 50px 30px 50px;
     background-image: url("img/marble.jpg");
+    background-size: cover;
 }
 p {
     font-family: verdana;
