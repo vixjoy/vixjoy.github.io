@@ -30,6 +30,7 @@ body{
   background-image: url("img/microDot.jpg");
   font-size: 15;
   font-family: verdana;
+  padding-bottom: 40px;
 }
 
 p{
@@ -47,6 +48,7 @@ p{
 div.gallery {
     border: 2px solid pink;
     float: center;
+
 }
 
 div.gallery:hover {
@@ -62,25 +64,4 @@ div.gallery img {
 div.desc {
 
     text-align: center;
-}
-
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-}
-
-/* Add a hover effect if you want */
-.fa:hover {
-    opacity: 0.7;
-}
-
-/* Set a specific color for each brand */
-
-/* Facebook */
-.fa-facebook {
-    background: #3B5998;
-    color: white;
 }
