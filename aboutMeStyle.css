@@ -7,11 +7,22 @@ h1.intro{
   text-shadow;
   color: dimgrey;
 }
+.bigpic{
+  width: 100%;
+}
 body{
-  background-image: url("microDot.jpg");
+  background-image: url("img/microDot.jpg");
   font-size: 15;
   font-family: verdana;
 
+}
+
+.img-circle {
+    padding: 20px 20px 20px 20px;
+    float: right;
+    border-radius: 50%;
+    width: 300px;
+    height: auto;
 }
 
 p{
