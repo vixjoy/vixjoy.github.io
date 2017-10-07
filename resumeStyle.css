@@ -8,7 +8,7 @@ div.a{
     background-image: url("img/marble.jpg");
     background-size: cover;
 }
-p {
+p, .potato {
     font-family: verdana;
     font-size: 12px;
     color: #383838;

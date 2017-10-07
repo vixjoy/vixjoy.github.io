@@ -12,12 +12,14 @@ div.top{
   background-size: cover;
   position: relative;
   padding: 0 0 0 0;
-    font-size: 80px;
-
+  font-size: 80px;
+}
+div.top.col-7 {
+  filter: brightness(50%);
 }
 img.profile{
   width: 100%;
-  height: auto;
+  height: 100%;
     float: right;
     -webkit-filter: grayscale(60%); /* Safari 6.0 - 9.0 */
     filter: grayscale(60%);
@@ -38,7 +40,7 @@ p{
   padding: 30px;
   padding-top: 40px;
   text-align: center;
-  border-style: dotted;
+  border-radius: 25px;
   border-color: dimgrey;
   background-color: #FCF2F3;
   color: black;
@@ -46,13 +48,16 @@ p{
 }
 
 div.gallery {
-    border: 2px solid pink;
+  border-top: 2px solid ;
+  border-bottom: : 2px solid pink;
     float: center;
+    background-color: white;
 
 }
 
 div.gallery:hover {
-    border: 2px solid #777;
+    border-top: 2px solid #777;
+    border-bottom: : 2px solid #777;
 }
 
 div.gallery img {
@@ -63,5 +68,6 @@ div.gallery img {
 
 div.desc {
 
+    background-color: white;
     text-align: center;
 }
