@@ -1,75 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
 
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <link rel="stylesheet" href="aboutMeStyle.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <div class="w3-bar">
-    <a href="resume.html" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-gray">Resume</a>
-    <a href="https://www.youtube.com/user/TheVickiScott/featured" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-gray">Youtube</a>
-    <a href="https://github.com/vixjoy" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-gray">GitHub</a>
-  </div>
+    <title>Victoria Joy Scott</title>
 
-  <div class="top container-fluid">
-    <div class = "row">
-      <div class = "col-7">
-    <h1 class = "mine">Hi, my name is Victoria.</h1>
-  </div>
-    <div class = "col-5">
-      <img class = "profile" src = "img/headshot.jpg">
-    </div>
-  </div>
-  </div>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-</head>
-<body>
-<div class = "container">
-  <p> My name is Victoria Scott and I'm a coder interested in expanding my skill set as I continue to further my education at the University of Florida's Computer Science program. Currently my objectives have focused on simulations and virtual reality. My experiences through various hackathons has allowed me to travel, network, and become more familiar with the coding community. In the future, I hope to  be involved in the advancement of  robotics, software development, and self-driving cars.</p>
-</div>
-<div class = "container">
-  <div class="row">
-    <div class="col-md-3 gallery">
-        <a target="_blank" href="img/troubleshooting.jpg">
-          <img src="img/troubleshooting.jpg" alt="Debugging">
-        </a>
-        <div class="desc">Developing a project on the Oculus Rift.</div>
-    </div>
-    <div class="col-md-3 gallery">
-        <a target="_blank" href="img/work2.jpg">
-          <img src="img/work2.jpg" alt="Developing" >
-        </a>
-        <div class="desc">Researching programming methods for the Oculus Rift, Unity and C#.</div>
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Victoria Joy Scott</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/vixjoy">GitHub</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.youtube.com/user/TheVickiScott/featured">Youtube</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="resume.html">Resume</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
+    </nav>
 
-    <div class="col-md-3 gallery">
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('img/pexels-photo-756914.jpeg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="page-heading">
+              <h1>About Me</h1>
+              <span class="subheading">I am a computer scientist.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
 
-          <a target="_blank" href="img/StetsonWin.jpg">
-            <img src="img/StetsonWin.jpg" alt="Winning" >
-          </a>
-          <div class="desc">Second Place Victory at Stetson U. Big thanks to MLH and all the sponsors.</div>
-
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>I am a student at the University of Florida. This semseter I am working on my seinor project buddy bots, a C++ game engine with a python layer on top. The purpose it to create an artifical intellegence to play capture the flag. The long term goal is to get teenagers interested in learning to program with python.</p>
+          <p>As a teaching assistant for operating systems I am excited to work on a Linux based Andriod operating system. The projects comming out of this semester will be very exciting.</p>
+          <p>My independent study this semseter is all things cyber security. I will participate in capture the flag competitions and attend cyber secruity networking events. You can follow my journey into cyber security through my blog.</p>
+        </div>
+      </div>
     </div>
-    <div class="col-md-3 gallery">
-          <a target="_blank" href="img/demo.jpg">
-            <img src="img/demo.jpg" alt="Presenting">
-          </a>
-          <div class="desc">Presenting my work with the help of a volunteer from the audience.</div>
-    </div>
-  </div>
-</div>
 
+    <hr>
 
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <!-- <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul> -->
+            <p class="copyright text-muted">Copyright</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- jQuery first, then Tether, then Bootstrap JS. -->
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-</body>
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.min.js"></script>
+
+  </body>
+
+</html>
