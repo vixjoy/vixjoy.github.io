@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Victoria Joy Scott</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../css/clean-blog.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Victoria Joy Scott</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/vixjoy">GitHub</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.youtube.com/user/TheVickiScott/featured">Youtube</a>
+            </li>
+              <!-- <li class="nav-item">
+              <a class="nav-link" href="../resume.html">Resume</a>
+              </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="../contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('../img/computer-motherboard-pc-wires.jpg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-heading">
+              <h1>Lets find some files!</h1>
+              <h2 class="subheading">Upclose and personal with the scary black box</h2>
+              <span class="meta">Posted by Victoria on January 26th, 2018</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+
+  <p>“Leaf of the Tree” is a large file system that uses many directories to make it difficult to find your flag. The idea is to use tab to auto complete the directory name. The file names are very long with a random string of characters tagged on the end. It would be very inefficient to type them out in their entirety. </p>
+  <p>“Leaf of the Forest” is file system many magnitudes larger than the “Leaf of a Tree” puzzle. In this challenge the effective way to find the flag is to use the “find” Linux command. Find can be used to find things. Weird, I know. To find a file by name we must use a flag. </p>
+  <p>find -name “flag”</p>
+  <p>If we wanted a list of all txt files in the directory then we could use the *. </p>
+  <p>find -name “*.txt”</p>
+  <p>We are not limited to our current directory by the find command. We can change the directory search by specifying before the name. If I wanted to see a list of all the html files on my desktop then the following command should do the trick.</p>
+  <p>find /Users/Victoria/Desktop  -name “*.html”</p>
+  <p>conventions. CamelCase or modifiedCamelCase? Who remembers. The flag -iname is just like the name tag however it ignores text case. The flag -mtime stands for modify time. If I wanted to see the .txt files modified in the last seven days then the following command would do nicely</p>
+  <p>find -mtime 7 -name “*.txt”</p>
+  <p>Grep is an entirely different beast. I learned about grep a semester ago and it has become a great tool in my arsenal. Grep searches for a string of plain text inside files. If I forgot my social security number but I knew I had it written somewhere on my computer, I could use grep. If we run this command from the root, we will be waiting an awful long time. The -R stands for recursive. The -R will ensure that a pointer will sift through every file on my computer looking for the text string I provided. </p>
+  <p></p>
+<p>grep “Social Security Number:” -R</p>
+<p>Hopefully I would have remembered where I saved this sensitive data. I could save myself time by narrowing down the search field. The following command will complete in a much shorter time.</p>
+<p>grep /User/Victoria/Documents/mySensitiveData “Social Security Number:” -R</p>
+<p>As a side note, please don’t save your sensitive data in a folder labeled mySensitiveData. It’s just not safe there.</p>
+  <img class="img-fluid" src="../img/kali-linux-logo-940x701.png" alt="">
+<p>This week’s independent research time was dedicated to getting back on the horse. The challenges on picoctf.com enabled me to brush up on my terminal commands. I am researching ways to set up my vulnerability testing environment. Using virtual box, I obtained a version of Kali Linux. Kali Linux was recommended to me by members of UF’s Security InfoSec Team (SIT). Next week I want to start practicing on Metasploit. Metasploit is a virtual machine with network-layer vulnerabilities. http://resources.infosecinstitute.com/hacking-lab/.</p>
+<!-- <p></p>
+<p></p>
+<p></p>
+<p></p>
+  <p><p>  <a href="#"> -->
+
+            </a>
+            <span class="caption text-muted">The first step to being really good at something is being really bad at something.</span>
+  <p></p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <!-- <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul> -->
+            <p class="copyright text-muted">Copyright</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.min.js"></script>
+
+  </body>
+
+</html>
