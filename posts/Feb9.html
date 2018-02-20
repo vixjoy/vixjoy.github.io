@@ -66,9 +66,9 @@
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="post-heading">
-              <h1>Virtually Awesome!</h1>
-              <h2 class="subheading">Kali Linux, Metasploitable, and Rickdiculously Easy</h2>
-              <span class="meta">Posted by Victoria on Feburary 2nd, 2018</span>
+              <h1>Port Scanning</h1>
+              <h2 class="subheading">Gaining access</h2>
+              <span class="meta">Posted by Victoria on Feburary 9th, 2018</span>
             </div>
           </div>
         </div>
@@ -82,27 +82,29 @@
           <div class="col-lg-8 col-md-10 mx-auto">
 
 
-<p>This week I made great strides in learning. I set up a great pen testing lab with Virtual Box, I learned a lot about networking. After getting Kai Linux up and running, I started poking around with Metasploitable and Rickdiculously easy virtual machines.
+<p>I like to think of a port like a mailbox. You put packets in the mailbox and they are taken away, sent to their destination. Sometimes packets are delivered to our mailbox to do with them what we will.
 </p>
-<p>The biggest challenge I had this week was simulating separate machines, on the same network. The tricky part of this is the security of my personal computer. When Metasploitable is plainly exposed to the internet, anyone could hack into it. There exist paths between my personal computer and Metasploitable. For security reasons, exposing Metasploitable to the internet simply would not do. After many failed attempts to get each virtual machine a unique IP address and a common net mesh, I created a host only network.
+<p>A netmask is a 32-bit mask used to break up an IP address into smaller parts. The purpose is to specify the network's available hosts. We can see a whole list of computers connected to a common net mask </p>
+<p>Once we have an array of available ports, we can test some of them out. If the port is open, then requests can be made to it. Common ports include ssh, tcp ftp. But what exactly is a port? The internet does all communication with these ports. The shortest description of the internet I’ve ever heard was “The internet is a series of tubes”. This definition is humorous because it takes a big complex concept, engineered by a global community and reduces it to seven words.
 </p>
-<p>The host only network connects the guest operating systems Kali Linux, Rickdiculously easy, and Metasploitable to each other. The network connection comes in and out via my host operating system Sierra. My host machine is configured securely. In theory, one should be barred from seeing my vulnerable virtual machines unless they obtained access to my computer first.
+<p>I played around with the ftp anonymous exploit. Many computers will just allow you to see and transfer files with no username or password. USER : anonymous PASS: \0 That’s right. The password is an empty string. This exploit exists is so websites can save cookies on your computer. I abused this open port on the Rickdiculously easy VM to get a flag.
 </p>
-<p>Commands I found extremely helpful in configuring the networks include,
-<li>nmap</li><li>nmap -A</li><li>ifconfig</li><li>ifconfig eth0</li>
+<p>Once a username is found we can try some password cracking on the ssh port. I have been using the tools Crunchy and John the Ripper to learn more about password cracking. I don’t fully understand it yet but I am making some decent progress.
 </p>
-<p>Next week, I will begin digging deep into these hackable virtual machines. I began dabbling with port scanning but have yet to accumulate enough knowledge to provide insight on the topic.
-</p>
+<p>I found 7 out of the 9 flags on Rickdiculously easy virtual machine. Given that it was my first go, that made me feel pretty good.
 
+</p>
+<p>On Friday, I showed up to our schools CTF team meeting to try my hand at a competitive CTF. I was not very good. The challenges were above my skill level and I didn’t find any vulnerabilities with my new port scanning capabilities.
 
-<!-- <p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>  -->
-            </a>
+</p>
+<p>Next weekend I am going to B-sides in Tampa. I will be creating a video diary for my next week’s entry. Hope to see you there!!
 
-  <p></p>
+<h2>What I am reading:
+</h2>
+<li>https://www.computerhope.com/jargon/n/netmask.htm</li>
+<li>https://www.webopedia.com/TERM/A/anonymous_FTP.html</li>
+</a>
+              <p></p>
           </div>
         </div>
       </div>
