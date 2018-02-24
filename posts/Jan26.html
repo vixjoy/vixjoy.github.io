@@ -29,7 +29,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Victoria Joy Scott</a>
+        <a class="navbar-brand" href="../index.html">Victoria Joy Scott</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -80,33 +80,55 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
+            <p> A CTF is a capture the flag competition.
+               Kind hearted engineers create the CTFs for hackers to practice and learn without the risk of prison time.
+                The field on which the CTF takes place is a vulnerable target, like a website, webserver or virtual machine.
+                 A hacker's mission is to prod and poke around the target looking for a flag.
+                  A flag looks something like this: <b>flag{ThiSlOngStrinGisthEFlaG}</b>.
+                  Points are awarded based on how difficult the flags are to find and how many flags each team has.
+              <p>"Leaf of the Tree" is a challenge on picoctf.com.
+                 The challenge simulates a large file system that uses many directories to make it difficult to find your flag.
+                 The idea is to use tab to auto complete the directory name.
+                 The file names are very long with a random string of characters tagged on the end.
+                  It would be very inefficient to type them out in their entirety. </p>
+            <p>"Leaf of the Forest is file system many magnitudes larger than the "Leaf of a Tree" puzzle.
+              In this challenge the effective way to find the flag is to use the "find" Linux command.
+               Find can be used to find things. To find a file by name we must use a flag. </p>
+            <p>find -name "flag"</p>
+            <p>If we wanted a list of all txt files in the directory then we could use the *. </p>
+            <p>find -name "*.txt"</p>
+            <p>We are not limited to our current directory by the find command.
+               We can change the directory search by specifying before the name.
+               If I wanted to see a list of all the html files on my desktop then the following command should do the trick.</p>
+            <p>find /Users/Victoria/Desktop  -name "*.html"</p>
+            <p>conventions. CamelCase or modifiedCamelCase? Who remembers.
+              The flag -iname is just like the name tag however it ignores text case.
+              The flag -mtime stands for modify time.
+               If I wanted to see the .txt files modified in the last seven days then the following command would do nicely</p>
+            <p>find -mtime 7 -name *.txt</p>
+            <p>Grep is an entirely different beast. I learned about grep a semester ago and it has become a great tool in my arsenal.
+               Grep searches for a string of plain text inside files.
+                Hypothetically, if someone forgot their bank account number but it was saved somewhere on their computer, they could use grep.
+                If we run this command from the root, we will be waiting an awful long time. The -R stands for recursive.
+                The -R will ensure that a pointer will sift through every file on my computer looking for the text string I provided. </p>
+          <p>grep "Well's Fargo" -R</p>
+          <p>Hopefully I would have remembered where I saved the data.
+             I could save myself time by narrowing down the search field.
+             The following command will complete in a much shorter time.</p>
+          <p>grep /User/Victoria/Documents/mySensitiveData Well's Fargo -R</p>
+          <p>As a side note, please dont save your sensitive data in a folder labeled mySensitiveData. Its just not safe there.</p>
+          <img class="img-fluid" src="../img/kali-linux-logo-940x701.png" alt="">
+        <p>This week's independent research time was dedicated to getting back on the horse.
+            The challenges on picoctf.com enabled me to brush up on my terminal commands.
+             I am researching ways to set up my vulnerability testing environment.
+             Using virtual box, I obtained a version of Kali Linux.
+              Kali Linux was recommended to me by members of UF's Security InfoSec Team (SIT).
+               Next week I want to start practicing on Metasploit.
+                Metasploit is a virtual machine with network-layer vulnerabilities. http://resources.infosecinstitute.com/hacking-lab/.</p>
 
-  <p>“Leaf of the Tree” is a challenge on picoctf.com. The challenge simulates a large file system that uses many directories to make it difficult to find your flag. The idea is to use tab to auto complete the directory name. The file names are very long with a random string of characters tagged on the end. It would be very inefficient to type them out in their entirety. </p>
-  <p>“Leaf of the Forest” is file system many magnitudes larger than the “Leaf of a Tree” puzzle. In this challenge the effective way to find the flag is to use the “find” Linux command. Find can be used to find things. Weird, I know. To find a file by name we must use a flag. </p>
-  <p>find -name “flag”</p>
-  <p>If we wanted a list of all txt files in the directory then we could use the *. </p>
-  <p>find -name “*.txt”</p>
-  <p>We are not limited to our current directory by the find command. We can change the directory search by specifying before the name. If I wanted to see a list of all the html files on my desktop then the following command should do the trick.</p>
-  <p>find /Users/Victoria/Desktop  -name “*.html”</p>
-  <p>conventions. CamelCase or modifiedCamelCase? Who remembers. The flag -iname is just like the name tag however it ignores text case. The flag -mtime stands for modify time. If I wanted to see the .txt files modified in the last seven days then the following command would do nicely</p>
-  <p>find -mtime 7 -name “*.txt”</p>
-  <p>Grep is an entirely different beast. I learned about grep a semester ago and it has become a great tool in my arsenal. Grep searches for a string of plain text inside files. If I forgot my social security number but I knew I had it written somewhere on my computer, I could use grep. If we run this command from the root, we will be waiting an awful long time. The -R stands for recursive. The -R will ensure that a pointer will sift through every file on my computer looking for the text string I provided. </p>
-  <p></p>
-<p>grep “Social Security Number:” -R</p>
-<p>Hopefully I would have remembered where I saved this sensitive data. I could save myself time by narrowing down the search field. The following command will complete in a much shorter time.</p>
-<p>grep /User/Victoria/Documents/mySensitiveData “Social Security Number:” -R</p>
-<p>As a side note, please don’t save your sensitive data in a folder labeled mySensitiveData. It’s just not safe there.</p>
-  <img class="img-fluid" src="../img/kali-linux-logo-940x701.png" alt="">
-<p>This week’s independent research time was dedicated to getting back on the horse. The challenges on picoctf.com enabled me to brush up on my terminal commands. I am researching ways to set up my vulnerability testing environment. Using virtual box, I obtained a version of Kali Linux. Kali Linux was recommended to me by members of UF’s Security InfoSec Team (SIT). Next week I want to start practicing on Metasploit. Metasploit is a virtual machine with network-layer vulnerabilities. http://resources.infosecinstitute.com/hacking-lab/.</p>
-<!-- <p></p>
-<p></p>
-<p></p>
-<p></p>
-  <p><p>  <a href="#"> -->
 
             </a>
-            <span class="caption text-muted">The first step to being really good at something is being really bad at something.</span>
-  <p></p>
+
           </div>
         </div>
       </div>
@@ -119,32 +141,17 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
-            <!-- <ul class="list-inline text-center">
-              <li class="list-inline-item">
-                <a href="#">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-            </ul> -->
+              <ul class="list-inline text-center">
+            <a href="post.html">
+              <h2 class="post-title">
+              Prev
+              </h2>
+            </a>
+            <a href="Feb2.html">
+              <h2 class="post-title">
+              Next
+              </h2>
+            </a>
             <p class="copyright text-muted">Copyright</p>
           </div>
         </div>
