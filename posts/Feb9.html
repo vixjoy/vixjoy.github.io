@@ -87,7 +87,7 @@
 <p>A netmask is a 32-bit mask used to break up an IP address into smaller parts. The purpose is to specify the network's available hosts. We can see a whole list of computers connected to a common net mask </p>
 <p>Once we have an array of available ports, we can test some of them out. If the port is open, then requests can be made to it. Common ports include ssh, tcp ftp. But what exactly is a port? The internet does all communication with these ports. The shortest description of the internet I’ve ever heard was “The internet is a series of tubes”. This definition is humorous because it takes a big complex concept, engineered by a global community and reduces it to seven words.
 </p>
-<p>I played around with the ftp anonymous exploit. Many computers will just allow you to see and transfer files with no username or password. USER : anonymous PASS: \0 That’s right. The password is an empty string. This exploit exists is so websites can save cookies on your computer. I abused this open port on the Rickdiculously easy VM to get a flag.
+<p>I played around with the ftp anonymous exploit. Many computers will just allow you to see and transfer files with no username or password. USER : anonymous PASS: \0 That’s right. The password is an empty string. I abused this open port on the Rickdiculously easy VM to get a flag.
 </p>
 <p>Once a username is found we can try some password cracking on the ssh port. I have been using the tools Crunchy and John the Ripper to learn more about password cracking. I don’t fully understand it yet but I am making some decent progress.
 </p>
