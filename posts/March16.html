@@ -66,9 +66,9 @@
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="post-heading">
-              <h1>Spring Break!</h1>
-              <h2 class="subheading">Lock Picking</h2>
-              <span class="meta">Posted by Victoria on March 9th, 2018</span>
+              <h1>Cryptography</h1>
+              <h2 class="subheading">the art of writing or solving codes.</h2>
+              <span class="meta">Posted by Victoria on March 16th, 2018</span>
             </div>
           </div>
         </div>
@@ -80,30 +80,23 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
-            <p> I spend a lot of time staring at a computer screen. Over spring break, I wanted to give my eyes and my mind a change of pace. I chose to spend my Spring break locking picking. </p>
+            <p>ASCII (American Standard Code for Information Interchange) is the numerical translation of common American symbols. ASCII codes are important for sending human friendly data over a computer. Every print statement I’ve coded relies on This very important table.</p>
+            <img class="img-fluid" src="../img/ascii.png" alt="">
 
-            <p>I focused on three kinds of locks. Pin and tumbler locks, Wafer locks and handcuffs.
-</p>
-            <p>There are many different ways to pick a lock. For more information about the basics check out the text “Practical Lock picking”. The lifting method and the rake method are effective for both pin and tumbler locks and wafer locks.
-
-</p>
-            <p>The lifting method is my personal favorite. It requires skill and knowhow. The lifting method focuses on applying gentle pressure to a one pin at a time until all the pins are in the upward position. Then the lock smoothly and elegantly falls open. Well, that’s the goal anyway. The lifting method is oh, so satisfying when it works out nicely. The mellifluous click of a lock springing open is oddly rewarding.
-</p>
-            <p>The lifting method has its drawbacks. Oversetting pins is an issue I often encounter. When too much pressure is placed on the tension wrench, pins can be shoved upward instead of placed. It’s hard to tell if a pin is placed poorly and the only remedy is to release all pins in the lock and start over.
-</p>
-            <p>Raking is a method similar to a brute force hack. Basically, one just gives the pins a good old-fashioned shake around until they all end up where they should be. It works but I wouldn’t describe this technique as elegant.
-
-</p>
-          <p>The author of Practical Lock Picking, Deviant Ollam is a big fan of the “hybrid method”. Just rake the lock a bit, see what you get. Then perhaps place the few remaining pins if the rake wasn’t completely effective. The diamond pick is a really good tool to use with this method. It’s shaped in such a way that it can both scrub the pins and place the pins. In good humor, Deviant Ollam referred to the diamond pick as the offspring of a rake and a lifting hook.
-
-</p>
-<img class="img-fluid" src="../img/locks.png" alt="">
-          <p>Handcuffs are interesting to experiment with because they can be either very easy or very hard depending on the tools available to you. Most handcuffs are basically the same. There is one basic handcuff key that unlocks most handcuffs. If I have my handcuff key handy I can be free in seconds, If I have a hairpin I can be free in minutes, If I have a wooden toothpick there is no telling how long I will be sitting there.
-</p>
+              <p>A checksum is a small piece of data derived from a large piece of data. Detecting errors is the purpose of creating a checksum. Errors can occur during transmission or storage of data.</p>
+                <p>The following is a snippet of code that accepts a string and will create a checksum for that string. We can make this code is designed to handle small strings. Larger strings would be better handled by a checksum of the data type long. It would not be space efficient to allocate a long variable to hold a number smaller than 2,147,483,647 (2^32/2). We may need a number larger than 2 billion if we are transmitting a string as large as a text book. </p>
+          <img class="img-fluid" src="../img/checksum.png" alt="">
+                  <p>Each letter in the string is translated into its Ascii value. The Ascii values are added up into a checksum. Identical strings will always add up to the same checksum. This process only works one way. Many strings can yield the same checksum. When a packet is sent, the checksum is calculated and sent along with the packet as part of the header. When the packet arrives at its destination the receiver can verify the string is valid by recalculating the checksum. If the received checksum matches the calculated checksum it is very unlikely that the packet was corrupt.</p>
+                    <p>This week I implemented a 3.0 RDT server, a sending client and a receiving client. I implemented the checksum code listed above to learn more about cryptography. The code I created can be found on my github page.</p>
 
           <h2>What I'm Reading:</h2>
-        <p><li>Practical Lock picking</li>
-      <li>Safe cracking for everyone!</li>
+        <p><li>
+https://www.raytheon.com/news/feature/dawn-drone-age
+</li>
+      <li>https://github.com/chelseametcalf/RDT-3.0
+</li>
+<li>https://www.asciitable.com
+</li>
 </p>
 
 
@@ -122,7 +115,7 @@
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
               <ul class="list-inline text-center">
-            <a href="March2.html">
+            <a href="March9.html">
               <h2 class="post-title">
               Prev
               </h2>
