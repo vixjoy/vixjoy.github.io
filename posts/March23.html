@@ -66,9 +66,9 @@
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="post-heading">
-              <h1>Cryptography</h1>
-              <h2 class="subheading">the art of writing or solving codes.</h2>
-              <span class="meta">Posted by Victoria on March 16th, 2018</span>
+              <h1>Cryptography and Blockchain</h1>
+              <h2 class="subheading">Securtiy in Decentralization</h2>
+              <span class="meta">Posted by Victoria on March 23th, 2018</span>
             </div>
           </div>
         </div>
@@ -80,22 +80,37 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
-            <p>ASCII (American Standard Code for Information Interchange) is the numerical translation of common American symbols. ASCII codes are important for sending human friendly data over a computer. Every print statement I’ve coded relies on This very important table.</p>
-            <img class="img-fluid" src="../img/ascii.png" alt="">
-              <p>A checksum is a small piece of data derived from a large piece of data. Detecting errors is the purpose of creating a checksum. Errors can occur during transmission or storage of data.</p>
-                <p>The following is a snippet of code that accepts a string and will create a checksum for that string. We can make this code is designed to handle small strings. Larger strings would be better handled by a checksum of the data type long. It would not be space efficient to allocate a long variable to hold a number smaller than 2,147,483,647 (2^32/2). We may need a number larger than 2 billion if we are transmitting a string as large as a text book. </p>
-          <img class="img-fluid" src="../img/checksum.png" alt="">
-                  <p>Each letter in the string is translated into its Ascii value. The Ascii values are added up into a checksum. Identical strings will always add up to the same checksum. This process only works one way. Many strings can yield the same checksum. When a packet is sent, the checksum is calculated and sent along with the packet as part of the header. When the packet arrives at its destination the receiver can verify the string is valid by recalculating the checksum. If the received checksum matches the calculated checksum it is very unlikely that the packet was corrupt.</p>
-                    <p>This week I implemented a 3.0 RDT server, a sending client and a receiving client. I implemented the checksum code listed above to learn more about cryptography. The code I created can be found on my github page.</p>
+            <p>Cryptocurrencies are utilizing a secure data structure called blockchain. There are a vast many websites and articles dedicated to teaching our friends about computers or money or both. I am going to get technical and try to expound upon the computer science behind the trends.</p>
 
-          <h2>What I'm Reading:</h2>
-        <p><li>
-https://www.raytheon.com/news/feature/dawn-drone-age
-</li>
-      <li>https://github.com/chelseametcalf/RDT-3.0
-</li>
-<li>https://www.asciitable.com
-</li>
+              <h3>Hash Functions</h3>
+                <p>Last week I made a post that explained a checksum. A check sum is a type of hash function. Data is encrypted via a hash function. With the hash, one can verify that the data has been unchanged. A hash should look nothing like the original data. The data can not be reconstructed with the hash alone because there are many possibilities that could yield the same hash.</p>
+                <h3>Merkle Trees</h3>
+            <p>A block contains a Merkle tree. A Merkle tree is a method of encrypting many pieces of data into one root hash. Let’s say we have four pieces of data to encrypt.  The raw pieces of data are feed into a hash function. Now we have 4 hashes. Hashes 1 and 2 are fed into another hash function together to yield hash12. Hashes 3 and 4 are treated the same way. There is a third hash function that brings hash12 and hash34 together to create a root hash, hash1234.</p>
+
+            <h3>Validation via Merkle Trees</h3>
+            <p>A block contains a Merkle tree. A Merkle tree is a method of encrypting many pieces of data into one root hash. Let’s say we have four pieces of data to encrypt.  The raw pieces of data are feed into a hash function. Now we have 4 hashes. Hashes 1 and 2 are fed into another hash function together to yield hash12. Hashes 3 and 4 are treated the same way. There is a third hash function that brings hash12 and hash34 together to create a root hash, hash1234.</p>
+              <img class="img-fluid" src="../img/orphan.png" alt="">
+              <p>"Blockchain formation. The main chain (black) consists of the longest series of blocks from the genesis block (green) to the current block. Orphan blocks (purple) exist outside of the main chain." - Wikipedia</p>
+<img class="img-fluid" src="../img/medium.png" alt="">
+<p>Picture provided by https://medium.com/@lhartikk/a-blockchain-in-200-lines-of-code-963cc1cc0e54</p>
+              <h3>How does it all come together?</h3>
+
+            <p>The block can be thought of as the following struct:</p>
+              <img class="img-fluid" src="../img/block.png" alt="">
+
+
+<p>A blockchain is essentially a linked list of blocks with a very strong hashing function. For more in-depth information I highly recommend medium.com. There is a minimalistic code base for blockchain that is very easy to read and understand.
+</p>
+          <h2>Lots of research this week...</h2>
+        <p><li>https://en.wikipedia.org/wiki/Blockchain</li>
+      <li>https://www.reddit.com/r/ArkEcosystem/comments/6bg2wn/mini_guide_mining_staking_forging_voting_how_to/</li>
+      <li>https://www.reddit.com/r/ArkEcosystem/comments/6b556q/mini_guide_first_steps_with_ark/</li>
+      <li>https://github.com/ArkEcosystem</li>
+      <li>http://nvidia.custhelp.com/app/answers/detail/a_id/4611/~/security-bulletin%3A-nvidia-driver-security-updates-for-cpu-speculative-side</li>
+      <li>https://medium.com/@lhartikk/a-blockchain-in-200-lines-of-code-963cc1cc0e54</li>
+      <li>https://www.youtube.com/watch?v=lik9aaFIsl4</li>
+      <li>https://www.youtube.com/watch?v=g6iDZspbRMg</li>
+
 </p>
 
 
@@ -114,7 +129,7 @@ https://www.raytheon.com/news/feature/dawn-drone-age
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
               <ul class="list-inline text-center">
-            <a href="March2.html">
+            <a href="March16.html">
               <h2 class="post-title">
               Prev
               </h2>
