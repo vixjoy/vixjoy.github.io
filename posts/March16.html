@@ -86,15 +86,15 @@
                 <p>The following is a snippet of code that accepts a string and will create a checksum for that string. We can make this code is designed to handle small strings. Larger strings would be better handled by a checksum of the data type long. It would not be space efficient to allocate a long variable to hold a number smaller than 2,147,483,647 (2^32/2). We may need a number larger than 2 billion if we are transmitting a string as large as a text book. </p>
           <img class="img-fluid" src="../img/checksum.png" alt="">
                   <p>Each letter in the string is translated into its Ascii value. The Ascii values are added up into a checksum. Identical strings will always add up to the same checksum. This process only works one way. Many strings can yield the same checksum. When a packet is sent, the checksum is calculated and sent along with the packet as part of the header. When the packet arrives at its destination the receiver can verify the string is valid by recalculating the checksum. If the received checksum matches the calculated checksum it is very unlikely that the packet was corrupt.</p>
-                    <p>This week I implemented a 3.0 RDT server, a sending client and a receiving client. I implemented the checksum code listed above to learn more about cryptography. The code I created can be found on my github page.</p>
+                    <p>This week I implemented a 3.0 RDT server, a sending client and a receiving client. I implemented the checksum code listed above to learn more about cryptography. The code I created can be found on my <a href ="https://github.com/vixjoy/Cryptography">github page</a>.</p>
 
           <h2>What I'm Reading:</h2>
-        <p><li>
-https://www.raytheon.com/news/feature/dawn-drone-age
+        <p><li><a href ="
+https://www.raytheon.com/news/feature/dawn-drone-age">Dawn of Drones</a>
 </li>
-      <li>https://github.com/chelseametcalf/RDT-3.0
+      <li><a href ="https://github.com/chelseametcalf/RDT-3.0">Chelse MetCalf on Github</a>
 </li>
-<li>https://www.asciitable.com
+<li><a href ="https://www.asciitable.com">Ascii Table</a>
 </li>
 </p>
 
