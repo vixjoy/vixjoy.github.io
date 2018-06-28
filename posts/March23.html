@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Victoria Joy Scott</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../css/clean-blog.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">Victoria Joy Scott</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/vixjoy">GitHub</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.youtube.com/user/TheVickiScott/featured">Youtube</a>
+            </li>
+              <!-- <li class="nav-item">
+              <a class="nav-link" href="../resume.html">Resume</a>
+              </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="../contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('../img/computer-motherboard-pc-wires.jpg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-heading">
+              <h1>Cryptography and Blockchain</h1>
+              <h2 class="subheading">Securtiy in Decentralization</h2>
+              <span class="meta">Posted by Victoria on March 23th, 2018</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <p>Cryptocurrencies are utilizing a secure data structure called blockchain. There are a vast many websites and articles dedicated to teaching our friends about computers or money or both. I am going to get technical and try to expound upon the computer science behind the trends.</p>
+
+              <h3>Hash Functions</h3>
+                <p>Last week I made a <a href="../March16.html">post</a> that explained a checksum. A checksum is a type of hash function. With the hash, one can verify that the data has been unchanged. A hash should look nothing like the original data. The data can not be reconstructed with the hash alone because there are many possibilities that could yield the same hash.</p>
+                <h3>Merkle Trees</h3>
+            <p>A block contains a Merkle tree. A Merkle tree is a method of hashing many pieces of data into one root hash. Let’s say we have four pieces of data to hash.  The raw pieces of data are feed into a hash function. Now we have 4 hashes. Hashes 1 and 2 are fed into another hash function together to yield hash12. Hashes 3 and 4 are treated the same way. There is a third hash function that brings hash12 and hash34 together to create a root hash, hash1234.</p>
+
+            <h3>Validation via Merkle Trees</h3>
+            <p>If any bit in the Merkle tree was altered, the root hash would not be correct. If the root hash is incorrect we can assume something is wrong with the block. When the block is corrupt there are many more miners with different versions of the same block. A blockchain uses an algorithm to score the validity of divergent paths. The most valid block can be selected above the others. Corrupt blocks become orphan blocks, meaning new blocks will never be spawned from them.</p>  <img class="img-fluid" src="../img/orphan.png" alt="">
+              <p>"Blockchain formation. The main chain (black) consists of the longest series of blocks from the genesis block (green) to the current block. Orphan blocks (purple) exist outside of the main chain." - Wikipedia</p>
+<img class="img-fluid" src="../img/medium.png" alt="">
+<p>Picture provided by https://medium.com/@lhartikk/a-blockchain-in-200-lines-of-code-963cc1cc0e54</p>
+              <h3>How does it all come together?</h3>
+
+            <p>The block can be thought of as the following struct:</p>
+              <img class="img-fluid" src="../img/block.png" alt="">
+
+
+<p>A blockchain is essentially a linked list of blocks with a very strong hashing function. For more in-depth information I highly recommend medium.com. There is a minimalistic code base for blockchain that is very easy to read and understand.
+</p>
+<img class="img-fluid" src="../img/note.jpg" alt="">
+
+
+          <h2>Lots of research this week...</h2>
+        <p><li><a href ="https://en.wikipedia.org/wiki/Blockchain">Wikipedia</a></li>
+      <li><a href ="https://www.reddit.com/r/ArkEcosystem/comments/6bg2wn/mini_guide_mining_staking_forging_voting_how_to/">ArkEcosystem</a></li>
+      <li><a href ="https://www.reddit.com/r/ArkEcosystem/comments/6b556q/mini_guide_first_steps_with_ark">ArkEcosystem First Steps</a></li>
+      <li><a href ="https://github.com/ArkEcosystem">ArkEcosystem on Github</a></li>
+      <li><a href ="http://nvidia.custhelp.com/app/answers/detail/a_id/4611/~/security-bulletin%3A-nvidia-driver-security-updates-for-cpu-speculative-side">Nvidia Graphics Cards</a></li>
+      <li><a href ="https://medium.com/@lhartikk/a-blockchain-in-200-lines-of-code-963cc1cc0e54">The Medium</a></li>
+      <li><a href ="https://www.youtube.com/watch?v=lik9aaFIsl4">Blockchain Basics Explained</a></li>
+      <li><a href ="https://www.youtube.com/watch?v=g6iDZspbRMg">Last Week Tonight with John Oliver</a></li>
+
+</p>
+
+
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+              <ul class="list-inline text-center">
+            <a href="March16.html">
+              <h2 class="post-title">
+              Prev
+              </h2>
+            </a>
+            <a href="March30.html">
+              <h2 class="post-title">
+              Next
+              </h2>
+            </a>
+            <p class="copyright text-muted">Copyright</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.min.js"></script>
+
+  </body>
+
+</html>

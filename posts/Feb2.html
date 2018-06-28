@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Victoria Joy Scott</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../css/clean-blog.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">Victoria Joy Scott</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/vixjoy">GitHub</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.youtube.com/user/TheVickiScott/featured">Youtube</a>
+            </li>
+              <!-- <li class="nav-item">
+              <a class="nav-link" href="../resume.html">Resume</a>
+              </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="../contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('../img/computer-motherboard-pc-wires.jpg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-heading">
+              <h1>Virtually Awesome!</h1>
+              <h2 class="subheading">Kali Linux, Metasploitable, and Rickdiculously Easy</h2>
+              <span class="meta">Posted by Victoria on Feburary 2nd, 2018</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+
+
+<p>This week I made great strides in learning.
+   I set up a great pen testing lab with Virtual Box, I learned a lot about networking.
+    After getting Kali Linux up and running, I started poking around with Metasploitable and Rickdiculously easy virtual machines.
+</p>
+<p>For a hacker, virtual machines are very important.
+   Having a pen testing lab provides a place to practice hacking skills without fear of punishment.
+   You should never hack a computer that isn't yours with out explicit consent from the owner of the computer.
+</p>
+<p>The biggest challenge I had this week was simulating separate machines, on the same network.
+  The goal is to have both virtual machines able to see eachother's network activity but their network activity must remain separate.
+  Having a unique IP address ensures their network activity will be unique.
+  Configuring them to the same netmesh will ensure the two VMs can see eachother's ports.
+  I will go into detail about ports in my next post.
+   The tricky part of this is the security of my personal computer.
+   When Metasploitable is plainly exposed to the internet, anyone could hack into it.
+   There exist paths between my personal computer and Metasploitable.
+    For security reasons, exposing Metasploitable to the internet simply would not do.
+     After many failed attempts to get each virtual machine a unique IP address and a common net mesh, I created a host only network.
+</p>
+<img class="img-fluid" src="../img/hostonly.png" alt="">
+
+<p>The host only network connects the guest operating systems Kali Linux, Rickdiculously easy, and Metasploitable to each other.
+   The network connection comes in and out via my host operating system Sierra.
+    My host machine is configured securely.
+    In theory, one should be barred from seeing my vulnerable virtual machines unless they obtained access to my computer first.
+</p>
+<p>Commands I found extremely helpful in configuring the networks include,
+<li>nmap</li><li>nmap -A</li><li>ifconfig</li><li>ifconfig eth0</li>
+</p>
+<p>Next week, I will begin digging deep into these hackable virtual machines. I began dabbling with port scanning but have yet to accumulate enough knowledge to provide insight on the topic.
+</p>
+
+
+<!-- <p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>  -->
+            </a>
+
+  <p></p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+
+            <ul class="list-inline text-center">
+            <a href="Jan26.html">
+              <h2 class="post-title">
+              Prev
+              </h2>
+            </a>
+            <a href="Feb9.html">
+              <h2 class="post-title">
+              Next
+              </h2>
+            </a>
+            <p class="copyright text-muted">Copyright</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.min.js"></script>
+
+  </body>
+
+</html>

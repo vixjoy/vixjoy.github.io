@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Victoria Joy Scott</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../css/clean-blog.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">Victoria Joy Scott</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/vixjoy">GitHub</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.youtube.com/user/TheVickiScott/featured">Youtube</a>
+            </li>
+              <!-- <li class="nav-item">
+              <a class="nav-link" href="../resume.html">Resume</a>
+              </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="../contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('../img/computer-motherboard-pc-wires.jpg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-heading">
+              <h1>Cryptography</h1>
+              <h2 class="subheading">the art of writing or solving codes.</h2>
+              <span class="meta">Posted by Victoria on March 16th, 2018</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <p>ASCII (American Standard Code for Information Interchange) is the numerical translation of common American symbols. ASCII codes are important for sending human friendly data over a computer. Every print statement I’ve coded relies on This very important table.</p>
+            <img class="img-fluid" src="../img/ascii.png" alt="">
+              <p>A checksum is a small piece of data derived from a large piece of data. Detecting errors is the purpose of creating a checksum. Errors can occur during transmission or storage of data.</p>
+                <p>The following is a snippet of code that accepts a string and will create a checksum for that string. We can make this code is designed to handle small strings. Larger strings would be better handled by a checksum of the data type long. It would not be space efficient to allocate a long variable to hold a number smaller than 2,147,483,647 (2^32/2). We may need a number larger than 2 billion if we are transmitting a string as large as a text book. </p>
+          <img class="img-fluid" src="../img/checksum.png" alt="">
+                  <p>Each letter in the string is translated into its Ascii value. The Ascii values are added up into a checksum. Identical strings will always add up to the same checksum. This process only works one way. Many strings can yield the same checksum. When a packet is sent, the checksum is calculated and sent along with the packet as part of the header. When the packet arrives at its destination the receiver can verify the string is valid by recalculating the checksum. If the received checksum matches the calculated checksum it is very unlikely that the packet was corrupt.</p>
+                    <p>This week I implemented a 3.0 RDT server, a sending client and a receiving client. I implemented the checksum code listed above to learn more about cryptography. The code I created can be found on my <a href ="https://github.com/vixjoy/Cryptography">github page</a>.</p>
+
+          <h2>What I'm Reading:</h2>
+        <p><li><a href ="
+https://www.raytheon.com/news/feature/dawn-drone-age">Dawn of Drones</a>
+</li>
+      <li><a href ="https://github.com/chelseametcalf/RDT-3.0">Chelse MetCalf on Github</a>
+</li>
+<li><a href ="https://www.asciitable.com">Ascii Table</a>
+</li>
+</p>
+
+
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+              <ul class="list-inline text-center">
+            <a href="March2.html">
+              <h2 class="post-title">
+              Prev
+              </h2>
+            </a>
+            <a href="March30.html">
+              <h2 class="post-title">
+              Next
+              </h2>
+            </a>
+            <p class="copyright text-muted">Copyright</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.min.js"></script>
+
+  </body>
+
+</html>

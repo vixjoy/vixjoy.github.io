@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Victoria Joy Scott</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../css/clean-blog.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">Victoria Joy Scott</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/vixjoy">GitHub</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.youtube.com/user/TheVickiScott/featured">Youtube</a>
+            </li>
+              <!-- <li class="nav-item">
+              <a class="nav-link" href="../resume.html">Resume</a>
+              </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="../contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('../img/computer-motherboard-pc-wires.jpg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-heading">
+              <h1>Packet Sniffing</h1>
+              <h2 class="subheading">Your computer sees more than it shows.</h2>
+              <span class="meta">Posted by Victoria on March 30th, 2018</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+
+              <h3>Hardware:</h3>
+                <p>Most computers are sold with an integrated wireless internet chip. A wireless chip replaced the previously used Ethernet cable. This switch to chips allowed data to propagate through the air instead of through wires. The integrated wireless chip is listening to every packet comming through the network. The software in this chip filters the data and deletes any data not addressed to itself. With an external wireless internet chip that can be purchased online a user, like you and me, can sift through all the data propagating on the same wireless network.
+                </p>
+                <p>Some of this data is encrypted. Some of this data is not. HTTPS is a common web protocol. The 'S' stands for secure, meaning its encrypted. HTTP is very similar but its missing the 'S'. When sniffing for packets HTTP is a target that may give some good information.
+                </p>
+
+                <h3>Wireshark</h3>
+            <p>Wireshark is an application that displays all packets picked up on the network. This is an example of a packet I sniffed off the Atlanta airport free and open Wi-Fi network. There are numerous packets sent through the air at any given moment. Most of these packets hold no interesting or telling data. Finding sensitive information this way is like trying to locate a needle in a haystack. People can protect themselves by always using HTTPS protocol for web browsing instead of HTTPS. Connecting to unfamiliar networks should be avoided. When using an open network, which is sometimes a necessary evil, I connect to the University of Florida’s virtual private network. Using a VPN makes your packets more secure.
+</p>    <img class="img-fluid" src="../img/sniff.png" alt="">
+
+                <p> For the privacy of others, I will not disclose any of the data I found</p>
+                <p>I looked into editing the software on my integrated wireless chip because I want to flip it into monitor mode. Moditor mode means it doesnt instantly delete all packets intended for other devices. I am pretty sure the software cannot be altered without physical access to the chip. I will <b>not</b> crack my computer open to start messing with the chip. I would, without a doubt, break my computer beyond repair.</p>
+
+          <h2>Readings</h2>
+        <p>
+      <li><a href ="https://www.wireshark.org">Wireshark</a></li>
+      <li><a href ="http://web.csulb.edu/~rlaster/docs/cecs572.pdf">Computer Networking: A Top Down Approach</a></li>
+      <li><a href ="https://null-byte.wonderhowto.com/how-to/hack-wi-fi-choosing-wireless-adapter-for-hacking-0157057/">Choosing a Wireless Adapter</a></li>
+
+</p>
+
+
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+              <ul class="list-inline text-center">
+            <a href="March23.html">
+              <h2 class="post-title">
+              Prev
+              </h2>
+            </a>
+            <a href="April6.html">
+              <h2 class="post-title">
+              Next
+              </h2>
+            </a>
+            <p class="copyright text-muted">Copyright</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.min.js"></script>
+
+  </body>
+
+</html>
